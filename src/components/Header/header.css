@@ -1,0 +1,29 @@
+/* Header.css */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.logo {
+  font-size: 24px;
+}
+
+.icons {
+  display: flex;
+}
+
+.icon {
+  font-size: 24px;
+  margin-left: 20px;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+.icon:hover {
+  color: #ff5722; /* Change color on hover */
+}

@@ -1,0 +1,46 @@
+/* src/Blog.css */
+.blog-post {
+  display: grid;
+  grid-template-columns: 1fr auto; /* One column for content, one column for buttons */
+  align-items: start; /* Align content to the starting position in the row */
+  gap: 20px; /* Gap between grid items */
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  margin-top: 10px;
+}
+
+.content {
+  grid-column: 1 / span 1; /* Content occupies the first column */
+}
+
+.blog-content {
+  margin-bottom: 10px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: flex-end; /* Align buttons to the extreme right horizontally */
+  align-items: center; /* Vertically center buttons */
+  flex-direction: row; /* Buttons in the same row */
+}
+
+.update-button,
+.delete-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 10px; /* Add spacing between buttons */
+  margin-top: 5px;
+}
+
+.update-button:hover,
+.delete-button:hover {
+  background-color: #0056b3;
+}
